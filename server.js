@@ -11,7 +11,7 @@ const io = require("socket.io")(server, {
 const mongoose = require("mongoose");
 const multer = require("multer");
 
-mongoose.connect("mongodb://localhost:27017/chatApp")
+mongoose.connect("mongodb+srv://root:root@cluster0.8oltf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB Connection Error:", err));
 
